@@ -6,13 +6,24 @@ import * as $_404 from "./routes/_404.tsx";
 import * as $_app from "./routes/_app.tsx";
 import * as $about from "./routes/about.tsx";
 import * as $api_joke from "./routes/api/joke.ts";
+import * as $character_cards from "./routes/character-cards.tsx";
+import * as $character_id_ from "./routes/character/[id].tsx";
+import * as $characters_page_ from "./routes/characters/[page].tsx";
+import * as $characters_index from "./routes/characters/index.tsx";
+import * as $city_city_ from "./routes/city/[city].tsx";
 import * as $countdown from "./routes/countdown.tsx";
+import * as $country_country_ from "./routes/country/[country].tsx";
 import * as $greet_name_ from "./routes/greet/[name].tsx";
+import * as $hello from "./routes/hello.tsx";
 import * as $index from "./routes/index.tsx";
+import * as $locations from "./routes/locations.tsx";
+import * as $ricknmorty from "./routes/ricknmorty.tsx";
+import * as $saludar from "./routes/saludar.tsx";
 import * as $search from "./routes/search.tsx";
 import * as $trivia from "./routes/trivia.tsx";
 import * as $Countdown from "./islands/Countdown.tsx";
 import * as $Counter from "./islands/Counter.tsx";
+import * as $island from "./islands/island.tsx";
 import { type Manifest } from "$fresh/server.ts";
 
 const manifest = {
@@ -21,15 +32,26 @@ const manifest = {
     "./routes/_app.tsx": $_app,
     "./routes/about.tsx": $about,
     "./routes/api/joke.ts": $api_joke,
+    "./routes/character-cards.tsx": $character_cards,
+    "./routes/character/[id].tsx": $character_id_,
+    "./routes/characters/[page].tsx": $characters_page_,
+    "./routes/characters/index.tsx": $characters_index,
+    "./routes/city/[city].tsx": $city_city_,
     "./routes/countdown.tsx": $countdown,
+    "./routes/country/[country].tsx": $country_country_,
     "./routes/greet/[name].tsx": $greet_name_,
+    "./routes/hello.tsx": $hello,
     "./routes/index.tsx": $index,
+    "./routes/locations.tsx": $locations,
+    "./routes/ricknmorty.tsx": $ricknmorty,
+    "./routes/saludar.tsx": $saludar,
     "./routes/search.tsx": $search,
     "./routes/trivia.tsx": $trivia,
   },
   islands: {
     "./islands/Countdown.tsx": $Countdown,
     "./islands/Counter.tsx": $Counter,
+    "./islands/island.tsx": $island,
   },
   baseUrl: import.meta.url,
 } satisfies Manifest;
